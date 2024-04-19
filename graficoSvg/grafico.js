@@ -32,21 +32,19 @@ console.log (contador)
 
 
 var svgNS = "http://www.w3.org/2000/svg";
-//var letra = document.createElementNS(svgNS, "text");
 
 var rectanguloEnX = 80 
 var anchoDelRectangulo = 50
 
 for(i=0; i<contador.length; i++){
-
+    
     //aqui estan las variables de las posiciones de los rectangulos
     var rectanguloEnY = 550 - (contador[i][1] * 100)
-    console.log(rectanguloEnY)
+    
     var largoDelRectangulo = 550 - rectanguloEnY
-    //var letraEnX = 100
-    //var letraEnY = 200
-
+    
     var rect = document.createElementNS(svgNS, "rect");
+    var letra = document.createElementNS(svgNS, "text");
     
     // Establecer atributos del rectángulo (coordenadas, tamaño, color, etc.)
     rect.setAttribute("x", rectanguloEnX);
@@ -54,9 +52,21 @@ for(i=0; i<contador.length; i++){
     rect.setAttribute("width", anchoDelRectangulo);
     rect.setAttribute("height", largoDelRectangulo);
     rect.setAttribute("fill", "blue");
+
+    letra.setAttribute("x", rectanguloEnX + 20);
+    letra.setAttribute("y", 585);
+    letra.setAttribute("font-size", 20)
+    letra.setAttribute("font-family","arial")
+
+    var texto = document.createTextNode(contador[i][0])
+
     // Agregar el rectángulo al documento SVG (puede ser un elemento <svg> o <g>)
     var svgContainer = document.getElementById("svgContainer"); // Suponiendo que tienes un elemento con el id "svgContainer"
     svgContainer.appendChild(rect);
+    letra.appendChild(texto);
+
+    svgContainer.appendChild(letra);
+
 
     rectanguloEnX = rectanguloEnX + 100
 }
