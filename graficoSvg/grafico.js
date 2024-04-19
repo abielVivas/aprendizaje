@@ -36,6 +36,8 @@ var svgNS = "http://www.w3.org/2000/svg";
 var rectanguloEnX = 80 
 var anchoDelRectangulo = 50
 
+var cantidad = 600 / (contador.length + 1)
+
 for(i=0; i<contador.length; i++){
     
     //aqui estan las variables de las posiciones de los rectangulos
@@ -68,5 +70,5 @@ for(i=0; i<contador.length; i++){
     svgContainer.appendChild(letra);
 
 
-    rectanguloEnX = rectanguloEnX + 100
+    rectanguloEnX = rectanguloEnX + cantidad
 }
