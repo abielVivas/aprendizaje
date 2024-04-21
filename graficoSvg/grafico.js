@@ -1,8 +1,11 @@
+
+
 //se definen las medidas del ancho del grafico
 var anchoDelLienzo = prompt("escoje el tamaño del grafico");//se hace un prompt para que el usuario escoja el ancho del grafico
 var altoDelLienzo = anchoDelLienzo;//se hace que el alto sea igual que el ancho
 
 //aqui se implementa la medida al lienzo
+var svgContainer = document.getElementById("svgContainer");
 svgContainer.setAttribute("width", anchoDelLienzo);
 svgContainer.setAttribute("height", altoDelLienzo);
 
@@ -52,7 +55,6 @@ linea2.setAttribute("stroke", "black");
 linea2.setAttribute("stroke-width", "2");
 
 // se aplican las lineas 
-var svgContainer = document.getElementById("svgContainer");
 svgContainer.appendChild(linea);
 svgContainer.appendChild(linea2);
 
@@ -95,7 +97,7 @@ for (var i = 0; i < contador.length; i++) {
     
     //aqui se modifican los numeros de la izquierda
     numeros.setAttribute("x", anchoDelLienzo * 0.05);
-    numeros.setAttribute("y", separacionDeLosNumeros);
+    numeros.setAttribute("y", separacionDeLosNumerosIzquierdos);
     numeros.setAttribute("font-size", (anchoDelRectangulo / 2));
     numeros.setAttribute("font-family", "arial");
     numeros.textContent = numerosLaterales[i];
