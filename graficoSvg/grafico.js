@@ -1,7 +1,7 @@
 
 
 //se definen las medidas del ancho del grafico
-var anchoDelLienzo = prompt("escoje el tamaño del grafico");//se hace un prompt para que el usuario escoja el ancho del grafico
+var anchoDelLienzo = prompt("escoje el tamaño del grafico ( se recomienda desde 300 hata 600 )");//se hace un prompt para que el usuario escoja el ancho del grafico
 var altoDelLienzo = anchoDelLienzo;//se hace que el alto sea igual que el ancho
 
 //aqui se implementa la medida al lienzo
