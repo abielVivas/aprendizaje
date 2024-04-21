@@ -1,5 +1,3 @@
-
-
 //se definen las medidas del ancho del grafico
 var anchoDelLienzo = prompt("escoje el tamaño del grafico ( se recomienda desde 300 hata 600 )");//se hace un prompt para que el usuario escoja el ancho del grafico
 var altoDelLienzo = anchoDelLienzo;//se hace que el alto sea igual que el ancho
@@ -31,7 +29,7 @@ function svg(array) {
     return contador;
 }
 // Llamada a la función svg con un arreglo de letras
-var contador = svg(["B", "A", "A", "A", "B", "C", "D", "C", "C","D", "B", "B", "A", "A", "E", "E", "F"]);
+var contador = svg(prompt("escoje las letras"));
 
 //este url es el tipo de dibujo
 var svgNS = "http://www.w3.org/2000/svg";
