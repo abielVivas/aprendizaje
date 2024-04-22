@@ -29,7 +29,7 @@ function svg(array) {
     return contador;
 }
 // Llamada a la función svg con un arreglo de letras
-var contador = svg(prompt("escoje las letras"));
+var contador = svg(window.prompt("escoje las letras"));
 
 //este url es el tipo de dibujo
 var svgNS = "http://www.w3.org/2000/svg";
@@ -73,7 +73,7 @@ for (var i = 0; i < contador.length; i++) {
     //se definen dentro del for porque la altura depende de las repeticiones de las letras 
     var rectanguloEnY = (altoDelLienzo) - (contador[i][1] * (altoDelLienzo / 6));
     var largoDelRectangulo = (altoDelLienzo *0.9) - rectanguloEnY;
-    
+
     //aqui se crean los elementos
     var rect = document.createElementNS(svgNS, "rect");
     var letra = document.createElementNS(svgNS, "text");
