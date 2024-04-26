@@ -4,7 +4,7 @@ do {
     whileDelTamañoInicialDelLienzo = parseInt(prompt("Escoje el tamaño del gráfico (se recomienda desde 300 hasta 600):")); // Se hace un prompt para que el usuario escoja el ancho del gráfico
 } while(isNaN(whileDelTamañoInicialDelLienzo));
 
-// Se definen las medidas del ancho del gráfico
+//se definen las medidas del ancho del gráfico
 var anchoDelLienzo = whileDelTamañoInicialDelLienzo;
 var altoDelLienzo = anchoDelLienzo;//se hace que el alto sea igual que el ancho
 
