@@ -1,0 +1,100 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: url('https://i.pinimg.com/originals/e7/cb/46/e7cb46959b55a91ff0c9706c1a46e481.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.container { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.caja {
+    background: rgba(255, 255, 255, 0.1); /* Fondo blanco con transparencia */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form h1 {
+    margin-bottom: 1.5rem;
+    color: #f0ddff;
+}
+
+#input-container1 {
+    position: relative;
+    margin-bottom: 2rem;
+    width: 100%;
+    max-width: 300px;
+}
+
+#input-container2 {
+    position: relative;
+    margin-bottom: 2rem;
+    width: 100%;
+    max-width: 300px;
+}
+
+#input-container3 {
+    position: relative;
+    margin-bottom: 2rem;
+    width: 100%;
+    max-width: 300px;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    background-color: #fde5ff;
+    outline: none;
+}
+
+label {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fce5ff; /* Cambio de color solicitado */
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+input:focus + label,
+input:not(:placeholder-shown) + label {
+    top: -10px;
+    left: 10px;
+    color: #fce5ff; /* Cambio de color solicitado */
+    font-size: 0.8rem;
+}
+
+button {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #5e00da;
+    color: #ffffff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 2s;
+}
+
+button:hover {
+    background-color: #fce5ff;
+    color: #330077;
+}
