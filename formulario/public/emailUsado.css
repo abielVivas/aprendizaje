@@ -1,0 +1,27 @@
+body {
+    color: rgb(255, 224, 248);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('https://i.pinimg.com/originals/e7/cb/46/e7cb46959b55a91ff0c9706c1a46e481.jpg');
+    background-size: cover;
+}
+
+#container {
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 300px;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s ease, visibility 1s ease;
+}
+
+#container.show {
+    opacity: 1;
+    visibility: visible;
+} 
