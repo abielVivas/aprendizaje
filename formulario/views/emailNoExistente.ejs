@@ -1,0 +1,24 @@
+<!-- views/emailUsado.ejs -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Correo Electrónico Ya Registrado</title>
+    <link rel="stylesheet" href="emailUsado.css">
+</head>
+<body>
+    <div id="container">
+        <h1>El email no esta registrado</h1>  
+        <p>El correo electrónico ingresado no está registrado en nuestra base de datos.</p>
+        <p><a href="/registrarse.html">Registrarse</a></p>
+    </div>
+    <script>
+        setTimeout(function() {
+            document.getElementById('container').classList.add('show');
+        }, 2000); 
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Enviado</title>
+    <link rel="stylesheet" href="posFormulario.css">
+</head>
+<body>
+    <div id="container">
+        <h1>Haz iniciado sesion!</h1>
+        <p>ID del usuario: <%= id %></p>
+    </div>
+
+    <script>  
+        setTimeout(function() {
+            document.getElementById('container').classList.add('show');
+        }, 2000);
+    </script> 
+</body>
+</html>
