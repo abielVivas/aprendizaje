@@ -1,0 +1,24 @@
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Correo Electrónico Ya Registrado</title>
+    <link rel="stylesheet" href="emailUsado.css">
+</head>  
+<body>
+    <div id="container">  
+        <h1>La contraseña es incorrecta</h1>
+        <p>La contraseña que proporciono no coincide con el correo electronico.</p>
+        <p><a href="/iniciarSesion.html">Iniciar Sesion</a></p>
+    </div>
+    <script>
+        setTimeout(function() {
+            document.getElementById('container').classList.add('show');
+        }, 2000); 
+    </script>
+</body>
+</html>
